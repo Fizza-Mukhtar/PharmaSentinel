@@ -1,0 +1,835 @@
+/* =========================================================
+   DRAP DASHBOARD - COMPLETE RESPONSIVE STYLES
+   Mobile First Approach with Breakpoints:
+   - Mobile: 320px - 767px
+   - Tablet: 768px - 1024px  
+   - Desktop: 1025px+
+========================================================= */
+
+/* =========================
+   STAKEHOLDERS (Manufacturers, Warehouses, Wholesalers, Shopkeepers, Distributors)
+========================= */
+
+.stakeholders-page,
+.manufacturers-page {
+  animation: fadeIn 0.3s ease-in;
+  padding: 16px;
+}
+
+/* Header Section - Responsive */
+.stakeholder-header,
+.page-header-mfr {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.stakeholder-title,
+.page-title-mfr {
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 8px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.stakeholder-subtitle,
+.page-subtitle-mfr {
+  font-size: clamp(0.85rem, 2vw, 0.95rem);
+  color: #64748b;
+  margin: 0;
+}
+
+.btn-export-stakeholder,
+.btn-export-mfr {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  font-size: 0.9rem;
+}
+
+/* Stat Cards - Fully Responsive */
+.stakeholder-stat-card,
+.stat-card-mfr,
+.analytics-stat-card {
+  border: none;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  height: 100%;
+  overflow: hidden;
+}
+
+.stakeholder-stat-card:hover,
+.stat-card-mfr:hover,
+.analytics-stat-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+.stakeholder-stat-content,
+.stat-content-mfr,
+.analytics-stat-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 4px;
+}
+
+.stakeholder-stat-icon,
+.stat-icon-mfr,
+.analytics-stat-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 1.25rem;
+}
+
+.stakeholder-stat-details,
+.stat-details-mfr,
+.analytics-stat-details {
+  flex: 1;
+  min-width: 0;
+}
+
+.stakeholder-stat-label,
+.stat-label-mfr,
+.analytics-stat-label {
+  font-size: clamp(0.7rem, 1.5vw, 0.85rem);
+  color: #64748b;
+  margin: 0 0 4px 0;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.stakeholder-stat-value,
+.stat-value-mfr,
+.analytics-stat-value {
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 2px 0;
+  line-height: 1.1;
+}
+
+.stakeholder-stat-subtitle,
+.analytics-stat-subtitle {
+  font-size: clamp(0.75rem, 1.5vw, 0.875rem);
+  color: #94a3b8;
+  margin: 0;
+}
+
+/* Filter Card - Responsive */
+.filter-card-stakeholder,
+.filter-card-mfr {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  background: white;
+  margin-bottom: 20px;
+}
+
+.filter-card-stakeholder .input-group-text,
+.filter-card-mfr .input-group-text {
+  background-color: #f8fafc;
+  border-color: #e2e8f0;
+  padding: 10px 12px;
+}
+
+.filter-card-stakeholder .form-control,
+.filter-card-mfr .form-control,
+.filter-card-stakeholder .form-select,
+.filter-card-mfr .form-select {
+  padding: 10px 14px;
+  font-size: 0.9rem;
+}
+
+.filter-results-stakeholder,
+.filter-results {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(0.8rem, 1.5vw, 0.9rem);
+  color: #64748b;
+  font-weight: 500;
+  padding: 10px 14px;
+  background-color: #f8fafc;
+  border-radius: 8px;
+  white-space: nowrap;
+}
+
+/* Tables - Mobile Responsive */
+.table-card-stakeholder,
+.table-card-mfr {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  background: white;
+}
+
+.stakeholder-table,
+.manufacturers-table {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.stakeholder-table thead,
+.manufacturers-table thead {
+  background-color: #f8fafc;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.stakeholder-table thead th,
+.manufacturers-table thead th {
+  padding: 14px 16px;
+  font-size: clamp(0.75rem, 1.5vw, 0.85rem);
+  font-weight: 700;
+  color: #475569;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border: none;
+  white-space: nowrap;
+}
+
+.stakeholder-table tbody td,
+.manufacturers-table tbody td {
+  padding: 14px 16px;
+  vertical-align: middle;
+  border-bottom: 1px solid #f1f5f9;
+  font-size: clamp(0.8rem, 1.5vw, 0.9rem);
+  color: #334155;
+}
+
+.stakeholder-table tbody tr:hover,
+.manufacturers-table tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+/* Stakeholder Info */
+.stakeholder-info,
+.manufacturer-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.stakeholder-avatar,
+.manufacturer-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.125rem;
+  flex-shrink: 0;
+  font-weight: 600;
+}
+
+.stakeholder-name,
+.manufacturer-name {
+  color: #0f172a;
+  font-weight: 600;
+  font-size: clamp(0.85rem, 1.5vw, 0.95rem);
+}
+
+/* Badges - Responsive */
+.metric-badge,
+.batch-badge,
+.status-badge,
+.status-badge-stakeholder {
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: clamp(0.7rem, 1.5vw, 0.8rem);
+  white-space: nowrap;
+}
+
+.status-badge-stakeholder,
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+
+/* Action Buttons */
+.btn-action-mfr {
+  background: none !important;
+  border: none !important;
+  color: #64748b !important;
+  padding: 6px 10px !important;
+  font-size: 1rem;
+}
+
+.btn-action-mfr:hover {
+  color: #1e3a8a !important;
+  background-color: #f1f5f9 !important;
+}
+
+/* =========================
+   DASHBOARD SPECIFIC STYLES
+========================= */
+
+.drap-dashboard {
+  padding: 16px;
+  background: #f8fafc;
+  min-height: 100vh;
+}
+
+.dashboard-card,
+.chart-card-analytics,
+.chart-card-mfr-detail {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.dashboard-card .card-body,
+.chart-card-analytics .card-body {
+  padding: 16px !important;
+}
+
+.card-title {
+  font-size: clamp(0.95rem, 2vw, 1.125rem);
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0;
+}
+
+/* Status Grid - Responsive */
+.status-grid-compact {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 10px;
+}
+
+.status-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  background: #f8fafc;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}
+
+.status-icon-sm {
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 1.125rem;
+}
+
+.status-num {
+  font-size: clamp(1.25rem, 3vw, 1.5rem);
+  font-weight: 700;
+  color: #1e293b;
+  line-height: 1;
+  margin-bottom: 2px;
+}
+
+.status-text {
+  font-size: clamp(0.7rem, 1.5vw, 0.8rem);
+  color: #64748b;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+/* Activity Compact */
+.activity-compact {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.activity-item-sm {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background: #f8fafc;
+  border-radius: 6px;
+  border-left: 3px solid #3b82f6;
+}
+
+.activity-name {
+  font-size: clamp(0.8rem, 1.5vw, 0.9rem);
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 3px;
+}
+
+/* =========================
+   MANUFACTURER DETAIL PAGE
+========================= */
+
+.manufacturer-detail-page {
+  animation: fadeIn 0.3s ease-in;
+  padding: 16px;
+}
+
+.detail-header-mfr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.manufacturer-info-card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background: white;
+}
+
+.manufacturer-title-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #f1f5f9;
+  flex-wrap: wrap;
+}
+
+.manufacturer-icon-large {
+  width: 70px;
+  height: 70px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(30, 58, 138, 0.3);
+}
+
+.manufacturer-detail-title {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 10px 0;
+  line-height: 1.2;
+}
+
+.manufacturer-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.info-item-mfr {
+  display: flex;
+  gap: 12px;
+  padding: 16px;
+  background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+  border-radius: 10px;
+  border-left: 4px solid #1e3a8a;
+  height: 100%;
+}
+
+.info-icon-mfr {
+  font-size: 1.5rem;
+  color: #1e3a8a;
+  flex-shrink: 0;
+}
+
+/* =========================
+   ANALYTICS PAGE
+========================= */
+
+.analytics-page {
+  animation: fadeIn 0.3s ease-in;
+  padding: 16px;
+}
+
+.analytics-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.time-range-select {
+  width: auto;
+  min-width: 160px;
+  max-width: 100%;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border-color: #e2e8f0;
+}
+
+.pie-legend,
+.pie-legend-analytics {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.legend-item,
+.legend-item-analytics {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background-color: #f8fafc;
+}
+
+.legend-dot,
+.legend-color-analytics {
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
+.legend-label,
+.legend-label-analytics {
+  flex: 1;
+  font-size: clamp(0.8rem, 1.5vw, 0.875rem);
+  color: #475569;
+  font-weight: 500;
+}
+
+.legend-value,
+.legend-value-analytics {
+  font-size: clamp(0.8rem, 1.5vw, 0.875rem);
+  color: #0f172a;
+  font-weight: 700;
+}
+
+/* Metrics */
+.metrics-card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.metric-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  background: #f8fafc;
+  border-radius: 10px;
+}
+
+.metric-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.metric-icon.success { background: #d1fae5; color: #10b981; }
+.metric-icon.warning { background: #fef3c7; color: #f59e0b; }
+.metric-icon.info { background: #dbeafe; color: #3b82f6; }
+.metric-icon.danger { background: #fee2e2; color: #ef4444; }
+
+.metric-item h4 {
+  font-size: clamp(1.25rem, 3vw, 1.5rem);
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 4px 0;
+}
+
+.metric-item p {
+  font-size: clamp(0.8rem, 1.5vw, 0.875rem);
+  color: #64748b;
+  margin: 0;
+}
+
+/* =========================
+   LOADING & ANIMATIONS
+========================= */
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  padding: 40px 20px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* =========================
+   RESPONSIVE BREAKPOINTS
+========================= */
+
+/* Tablet - 768px to 1024px */
+@media (max-width: 1024px) {
+  .stakeholders-page,
+  .manufacturers-page,
+  .drap-dashboard,
+  .analytics-page,
+  .manufacturer-detail-page {
+    padding: 12px;
+  }
+  
+  .stakeholder-header,
+  .page-header-mfr,
+  .detail-header-mfr,
+  .analytics-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .btn-export-stakeholder,
+  .btn-export-mfr {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .header-actions-mfr {
+    width: 100%;
+    justify-content: stretch;
+  }
+  
+  .header-actions-mfr button {
+    flex: 1;
+  }
+  
+  .time-range-select {
+    width: 100%;
+  }
+  
+  .status-grid-compact {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .manufacturer-title-section {
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .manufacturer-meta {
+    justify-content: center;
+  }
+}
+
+/* Mobile - Up to 767px */
+@media (max-width: 767px) {
+  .stakeholders-page,
+  .manufacturers-page,
+  .drap-dashboard,
+  .analytics-page,
+  .manufacturer-detail-page {
+    padding: 8px;
+  }
+  
+  .stakeholder-stat-icon,
+  .stat-icon-mfr,
+  .analytics-stat-icon {
+    width: 42px;
+    height: 42px;
+    font-size: 1.125rem;
+  }
+  
+  .status-icon-sm {
+    width: 34px;
+    height: 34px;
+    font-size: 1rem;
+  }
+  
+  .manufacturer-icon-large {
+    width: 56px;
+    height: 56px;
+    font-size: 1.5rem;
+  }
+  
+  .status-grid-compact {
+    grid-template-columns: 1fr;
+  }
+  
+  .status-box {
+    padding: 10px;
+  }
+  
+  /* Make table scrollable on mobile */
+  .table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .stakeholder-table,
+  .manufacturers-table {
+    min-width: 700px;
+  }
+  
+  .stakeholder-table thead th,
+  .manufacturers-table thead th {
+    padding: 12px 10px;
+  }
+  
+  .stakeholder-table tbody td,
+  .manufacturers-table tbody td {
+    padding: 12px 10px;
+  }
+  
+  .stakeholder-avatar,
+  .manufacturer-avatar {
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
+  }
+  
+  /* Stack filter items */
+  .filter-results-stakeholder,
+  .filter-results {
+    margin-top: 8px;
+  }
+  
+  .metric-item {
+    padding: 12px;
+  }
+  
+  .metric-icon {
+    width: 38px;
+    height: 38px;
+    font-size: 1.125rem;
+  }
+  
+  .manufacturer-meta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .meta-divider {
+    display: none;
+  }
+  
+  /* Charts responsive height */
+  .recharts-responsive-container {
+    min-height: 250px !important;
+  }
+}
+
+/* Small Mobile - Up to 480px */
+@media (max-width: 480px) {
+  .btn-export-stakeholder,
+  .btn-export-mfr {
+    font-size: 0.85rem;
+    padding: 8px 16px;
+  }
+  
+  .btn-export-stakeholder svg,
+  .btn-export-mfr svg {
+    display: none;
+  }
+  
+  .stakeholder-stat-content,
+  .stat-content-mfr,
+  .analytics-stat-content {
+    gap: 8px;
+  }
+  
+  .status-badge-stakeholder,
+  .status-badge {
+    font-size: 0.7rem;
+    padding: 4px 8px;
+  }
+  
+  .metric-badge,
+  .batch-badge {
+    font-size: 0.7rem;
+    padding: 4px 8px;
+  }
+  
+  .activity-item-sm {
+    padding: 8px;
+  }
+  
+  .info-item-mfr {
+    padding: 12px;
+  }
+}
+
+/* =========================
+   UTILITY CLASSES
+========================= */
+
+.text-truncate-mobile {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 767px) {
+  .hide-mobile {
+    display: none !important;
+  }
+}
+
+/* Ensure Bootstrap grid gaps work properly */
+.g-3 {
+  --bs-gutter-x: 1rem;
+  --bs-gutter-y: 1rem;
+}
+
+@media (max-width: 767px) {
+  .g-3 {
+    --bs-gutter-x: 0.75rem;
+    --bs-gutter-y: 0.75rem;
+  }
+}
+
+/* Card body padding adjustment */
+.card-body {
+  padding: 1.25rem;
+}
+
+@media (max-width: 767px) {
+  .card-body {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-body {
+    padding: 0.875rem;
+  }
+}

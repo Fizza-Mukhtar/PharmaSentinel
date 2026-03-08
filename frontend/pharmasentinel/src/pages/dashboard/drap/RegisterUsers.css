@@ -1,0 +1,30 @@
+/* src/pages/dashboard/drap/RegisterUsers.css */
+
+
+
+/* Optional: Add smooth animations */
+.alert {
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .btn {
+    font-size: 0.875rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+}

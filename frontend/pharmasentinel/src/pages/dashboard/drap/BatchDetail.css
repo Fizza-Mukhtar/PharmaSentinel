@@ -1,0 +1,372 @@
+/* src/pages/dashboard/drap/BatchDetail.css */
+
+.batch-detail-page {
+  animation: fadeIn 0.3s ease-in;
+}
+
+/* Header */
+.detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.btn-back {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.header-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.header-actions button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+/* Batch Info Card */
+.batch-info-card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.batch-title-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #f1f5f9;
+}
+
+.batch-icon {
+  font-size: 3rem;
+  color: #1e3a8a;
+  background: #dbeafe;
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.batch-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 8px 0;
+}
+
+.batch-id {
+  font-size: 1rem;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-family: 'Courier New', monospace;
+}
+
+/* Info Items */
+.info-item {
+  display: flex;
+  gap: 12px;
+  padding: 16px;
+  background: #f8fafc;
+  border-radius: 10px;
+  height: 100%;
+}
+
+.info-icon {
+  font-size: 1.5rem;
+  color: #1e3a8a;
+  flex-shrink: 0;
+}
+
+.info-item small {
+  color: #64748b;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.info-item p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #0f172a;
+}
+
+/* QR Section */
+.qr-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: #f8fafc;
+  border-radius: 12px;
+  height: 100%;
+}
+
+.qr-image {
+  max-width: 200px;
+  width: 100%;
+  border-radius: 8px;
+  border: 4px solid white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.qr-placeholder {
+  text-align: center;
+  color: #94a3b8;
+}
+
+.qr-placeholder p {
+  margin: 8px 0 0 0;
+  font-size: 0.9rem;
+}
+
+/* Stat Cards */
+.stat-card-detail {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s;
+}
+
+.stat-card-detail:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+.stat-detail-content {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.stat-detail-icon {
+  font-size: 2rem;
+}
+
+.stat-detail-content small {
+  display: block;
+  color: #64748b;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.stat-detail-content h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+}
+
+/* Blockchain Card */
+.blockchain-card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  height: 100%;
+}
+
+.blockchain-card .card-header {
+  background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+  color: white;
+  border-radius: 12px 12px 0 0;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+}
+
+.blockchain-card .card-header h5 {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.blockchain-list {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.blockchain-block {
+  padding: 16px;
+  border-bottom: 1px solid #f1f5f9;
+  transition: all 0.2s;
+}
+
+.blockchain-block:hover {
+  background: #f8fafc;
+}
+
+.blockchain-block:last-child {
+  border-bottom: none;
+}
+
+.block-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.block-header strong {
+  color: #0f172a;
+  font-size: 0.95rem;
+}
+
+.block-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.block-info small {
+  color: #64748b;
+  font-size: 0.8rem;
+  font-family: 'Courier New', monospace;
+}
+
+/* Transfer Card */
+.transfer-card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  height: 100%;
+}
+
+.transfer-card .card-header {
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: white;
+  border-radius: 12px 12px 0 0;
+  padding: 16px 20px;
+  border: none;
+}
+
+.transfer-card .card-header h5 {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+/* Timeline */
+.transfer-timeline {
+  max-height: 500px;
+  overflow-y: auto;
+  padding: 8px;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 16px;
+  padding: 16px 0;
+  position: relative;
+}
+
+.timeline-item:not(:last-child)::before {
+  content: '';
+  position: absolute;
+  left: 11px;
+  top: 40px;
+  bottom: -16px;
+  width: 2px;
+  background: #e2e8f0;
+}
+
+.timeline-marker {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #10b981;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  flex-shrink: 0;
+  z-index: 1;
+}
+
+.timeline-content {
+  flex: 1;
+}
+
+.transfer-header {
+  font-size: 0.95rem;
+  color: #0f172a;
+  margin-bottom: 8px;
+}
+
+.transfer-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.transfer-details {
+  display: flex;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .batch-title-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .header-actions {
+    width: 100%;
+  }
+  
+  .header-actions button {
+    flex: 1;
+  }
+}
+
+@media (max-width: 767px) {
+  .detail-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .batch-title {
+    font-size: 1.5rem;
+  }
+  
+  .stat-detail-content h3 {
+    font-size: 1.25rem;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

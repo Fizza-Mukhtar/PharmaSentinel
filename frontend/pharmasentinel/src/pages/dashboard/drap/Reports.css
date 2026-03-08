@@ -1,0 +1,178 @@
+/* src/pages/dashboard/drap/Reports.css */
+
+.reports-page {
+  padding: 24px;
+}
+
+.reports-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.reports-header h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 4px;
+}
+
+.stat-card {
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.stat-card.active {
+  border-color: #3b82f6;
+  background-color: #eff6ff;
+}
+
+.stat-content h3 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.batch-id-code {
+  background-color: #f1f5f9;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+  font-size: 13px;
+  color: #475569;
+}
+
+.report-reason {
+  font-size: 14px;
+  color: #475569;
+}
+
+/* ReportDetail.css */
+.report-detail-page {
+  padding: 24px;
+}
+
+.report-header {
+  margin-bottom: 24px;
+}
+
+.back-button {
+  color: #64748b;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 0;
+  margin-bottom: 12px;
+  display: inline-block;
+}
+
+.back-button:hover {
+  color: #3b82f6;
+}
+
+.report-title-section {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.report-title-section h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0;
+}
+
+.status-badge {
+  font-size: 14px;
+  padding: 8px 16px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.info-item label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #64748b;
+  margin-bottom: 4px;
+}
+
+.info-item strong {
+  font-size: 15px;
+  color: #1e293b;
+}
+
+.batch-id-display {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  background-color: #f8fafc;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+.batch-id-display code {
+  font-family: 'Courier New', monospace;
+  font-size: 16px;
+  color: #3b82f6;
+  font-weight: 600;
+}
+
+.additional-details {
+  padding: 12px;
+  background-color: #f8fafc;
+  border-radius: 8px;
+  border-left: 4px solid #3b82f6;
+  margin-bottom: 0;
+  white-space: pre-wrap;
+}
+
+.batch-info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.batch-info-item label {
+  display: block;
+  font-size: 12px;
+  color: #64748b;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.batch-info-item strong {
+  font-size: 14px;
+  color: #1e293b;
+}
+
+.action-card {
+  position: sticky;
+  top: 24px;
+}
+
+.review-info {
+  padding-top: 16px;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+}

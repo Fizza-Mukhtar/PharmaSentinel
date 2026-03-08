@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "name": "MedicineTracer",
+    "slug": "medicinetracer",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "scheme": "medicinetracer",
+    "splash": {
+      "backgroundColor": "#2563eb",
+      "resizeMode": "contain"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.medicinetracer.app"
+    },
+    "android": {
+      "package": "com.medicinetracer.app",
+      "permissions": [
+        "CAMERA",
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ],
+      "adaptiveIcon": {
+        "backgroundColor": "#2563eb"
+      }
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow MedicineTracer to access your camera to scan QR codes."
+        }
+      ],
+      "expo-barcode-scanner",
+      "expo-font",
+      "expo-router"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "aba09d6c-f888-42df-b28a-76c4e901dca6"
+      }
+    }
+  }
+}
